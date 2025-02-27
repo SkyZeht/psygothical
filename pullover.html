@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psygothical - Галерея</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            background: #121212;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            color: #ffffff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #1e1e1e;
+            padding: 10px;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 15px;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            opacity: 0.8;
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 204, 0, 0.8);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #121212;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding: 10px;
+            font-size: 1em;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Все шмотки Psygothical</h1>
+    <div class="gallery">
+        <a href="https://www.instagram.com/p/C-fsZ2zsX9s/?hl=ru&img_index=1" class="gallery-item">
+            <div class="caption">longsleeve “where is my reality?”</div>
+            <img src="h1.jpg" alt="Коллекция 1">
+        </a>
+        <a href="https://www.instagram.com/p/C9mahdNImK8/?hl=ru&img_index=1" class="gallery-item">
+            <div class="caption">“memories black” t-shirt</div>
+            <img src="h2.jpg" alt="Коллекция 2">
+        </a>
+        <a href="https://www.instagram.com/p/C9k4oDKoqRl/?hl=ru&img_index=1" class="gallery-item">
+            <div class="caption">“memories white” t-shirt</div>
+            <img src="h3.jpg" alt="Коллекция 3">
+        </a>
+        <a href="https://www.instagram.com/p/C-qASqgMy8g/?hl=ru" class="gallery-item">
+            <div class="caption">t-shirt “codex of ghouls”</div>
+            <img src="h4.jpg" alt="Коллекция 4">
+        </a>
+        <a href="https://www.instagram.com/p/DEfYRGOMXwY/?hl=ru&img_index=1" class="gallery-item">
+            <div class="caption">“dark reality” hoodie</div>
+            <img src="h5.jpg" alt="Коллекция 5">
+        </a>
+        <a href="https://www.instagram.com/p/DAjYL3Ts3bo/?hl=ru&img_index=1" class="gallery-item">
+            <div class="caption">longsleeve “where is my reality?”</div>
+            <img src="h6.jpg" alt="Коллекция 6">
+        </a>
+        <a href="https://www.instagram.com/p/DBrwiIiMGHb/?hl=ru&img_index=1" class="gallery-item">
+            <div class="caption">t-shirt “codex of ghouls”</div>
+            <img src="h7.jpg" alt="Коллекция 7">
+        </a>
+        <a href="https://www.instagram.com/p/DGIzQ3Cs9ev/?hl=ru&img_index=1" class="gallery-item">
+            <div class="caption">”dark reality” hoodie</div>
+            <img src="h8.jpg" alt="Коллекция 8">
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Psygothical Все права защищены</p>
+    </div>
+</body>
+</html>
